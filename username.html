@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Username</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #history{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        
+        }
+      .header {
+        text-align: center;
+        border-bottom: 4px solid black;
+        background-color: peachpuff;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 10px;
+      }
+      .login-btn {
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: green;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .login-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .main-container {
+        padding: 10px;
+        max-width: 1000px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 200px 1fr;  
+        gap: 20px;
+        height: 100vh;
+      }
+      /* .body-continer{
+            background-color: bisque;
+        } */
+    </style>
+  </head>
+  <body class="body-continer">
+    <header class="header">
+      <h1>History of how many people have visited my website</h1>
+    </header>
+
+    <div class="main-container">
+      <section class="all-history">
+        <h1>ALl <span>History</span></h1>
+        <button onclick="history()" class="login-btn">Shwo Login History</button>
+      </section>
+
+      <div id="history" >
+
+        
+       
+      </div>
+    </div>
+    <script src="username.js"></script>
+    <!-- // {
+// "id": 1,
+// "name": "Leanne Graham",
+// "username": "Bret",
+// "email": "Sincere@april.biz",
+// "address": {
+// "street": "Kulas Light",
+// "suite": "Apt. 556",
+// "city": "Gwenborough",
+// "zipcode": "92998-3874",
+// "geo": {
+// "lat": "-37.3159",
+// "lng": "81.1496"
+// }
+// }, -->
+  </body>
+</html>
